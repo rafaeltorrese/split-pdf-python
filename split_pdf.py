@@ -15,7 +15,6 @@ def pdf_splitter(filename, new_filename='file', pages=(1, 1)):
     except Exception as e:
         print(e)
 
-if __name__ == '__main__':
-        
+if __name__ == '__main__':        
     for name, page in toc.items():        
         pdf_splitter(pathtofile, name.lower().replace(' ','_'), page)
