@@ -1,6 +1,3 @@
-from operator import imod
-import sys
-import os
 from PyPDF2 import PdfFileWriter, PdfFileReader
 from data import pathtofile, toc
 
