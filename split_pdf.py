@@ -17,4 +17,4 @@ def pdf_splitter(filename, new_filename='file', pages=(1, 1)):
 
 if __name__ == '__main__':        
     for name, page in toc.items():        
-        pdf_splitter(pathtofile, name.lower().replace(' ','_'), page)
+        pdf_splitter(pathtofile, name.lower().replace(' ','_').replace('/','-'), page)
