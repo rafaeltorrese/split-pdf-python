@@ -11,7 +11,7 @@ def pdf_splitter(filename, new_filename='file', pages=(1, 1)):
             for i in range(start - 1, end):
                 new_pdf.addPage(read_file.getPage(i))
                 new_pdf.write(f)
-        print('PDF splitted successfully')
+        print(f'{new_filename}.pdf splitted successfully')
     except Exception as e:
         print(e)
 
