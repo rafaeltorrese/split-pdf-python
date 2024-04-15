@@ -1,3 +1,6 @@
+# Path to pdf file
+`pathtofile = 'my_directory/my_file.pdf'`
+
 # Name of splitted pages
 To add names to splitted pages Use a dictionary in this form:
 
