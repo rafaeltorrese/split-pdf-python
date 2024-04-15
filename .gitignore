@@ -3,3 +3,4 @@ data.py
 *.pyc*
 __pycache__
 .env
+*.txt
