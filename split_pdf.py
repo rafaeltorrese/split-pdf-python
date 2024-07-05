@@ -19,7 +19,6 @@ if __name__ == '__main__':
     for i, toc in enumerate(toc.items(), 2):
         name, page = toc
         my_filename = name.lower().replace(' ','-').replace('/','-')
-        print(my_filename)        
         pdf_splitter(filename=pathtofile, 
                      new_filename=f'{str(i).zfill(2)}_{my_filename}', 
                      pages=page)
