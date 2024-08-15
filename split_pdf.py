@@ -18,7 +18,7 @@ def pdf_splitter(filename, new_filename='file', pages=(1, 1)):
 if __name__ == '__main__':        
     for i, toc in enumerate(toc.items(), chapter_start):
         name, page = toc
-        my_filename = name.lower().replace(' ','-').replace(': ','_').replace('/','-')
+        my_filename = name.lower().replace(' ','-').replace(':-','_').replace('/','-')
         pdf_splitter(filename=pathtofile, 
                      new_filename=f'{str(i).zfill(2)}_{my_filename}', 
                      pages=page)
