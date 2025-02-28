@@ -1,7 +1,13 @@
 # Path to pdf file
 `pathtofile = 'my_directory/my_file.pdf'`
 
+## Initial Chapter
+Don't forget set the initial chapter number as this:
+
+`chapter_start = 1`
+
 # Name of splitted pages
+
 To add names to splitted pages Use a dictionary in this form:
 
 ```python
