@@ -1,15 +1,15 @@
-from PyPDF2 import PdfFileWriter, PdfFileReader
+from PyPDF2 import PdfWriter, PdfReader
 from data import pathtofile, toc, chapter_start
 
 
 def pdf_splitter(filename, new_filename='file', pages=(1, 1)):
     start, end = pages
-    read_file = PdfFileReader(open(filename, 'rb'))
-    new_pdf = PdfFileWriter()
+    read_file = PdfReader(open(filename, 'rb'))
+    new_pdf = PdfWriter()
     try:
         with open(f'{new_filename}.pdf', 'wb') as f:
             for i in range(start - 1, end):
-                new_pdf.addPage(read_file.getPage(i))
+                new_pdf.add_page(read_file.pages[i])
                 new_pdf.write(f)
         print(f'{new_filename}.pdf splitted successfully')
     except Exception as e:
