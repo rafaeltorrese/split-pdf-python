@@ -1,3 +1,4 @@
+import os
 from PyPDF2 import PdfWriter, PdfReader
 from data import pathtofile, toc, chapter_start
 
@@ -16,6 +17,7 @@ def pdf_splitter(filename, new_filename='file', pages=(1, 1)):
         print(e)
 
 if __name__ == '__main__':        
+    pathtofile = os.path.join(*pathtofile)
     for i, toc in enumerate(toc.items(), chapter_start):
         name, page = toc
         my_filename = name.lower().replace(' ','-').replace(':-','_').replace('/','-')
