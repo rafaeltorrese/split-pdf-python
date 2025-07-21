@@ -1,5 +1,5 @@
 # Path to pdf file
-`pathtofile = 'my_directory/my_file.pdf'`
+`pathtofile = ('path', 'to', 'my', 'file.pdf')`
 
 ## Initial Chapter
 Don't forget set the initial chapter number as this:
